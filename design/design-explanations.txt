@@ -1,0 +1,61 @@
+
+PROBLEM: To create an arcade-style game that incorporates realistic physics.
+
+GENERAL GAMEPLAY ISSUES/RESOLUTIONS:
+1. Implementing physics 
+	- Uses a constant gravity, and adds or subtracts to each snowball's velocity 
+	in the function bubbleMovement(). Horizontal velocity stays the same, unless a snowball range has been found to be close to going out of range of the window. 
+2. Creating a theme
+	- One unappealing aspect of the game that "Pittsburgh Winter" was based on was 
+	that there was no overarching theme. Hence, I made sure that "Pittsburgh Winter" 
+	has a coherent storyline and appropriate color scheme. (The colors really do 
+	make the setting look like a wintery Pittsburgh day!)
+3. Arrow/snowball collisions
+	- When an arrow is show, the length of the arrow increases until it reaches either
+	a bubble, or the top of the screen. If the arrow hits either, the arrow disappears.
+	Arrow and bubble collisions are determined by the radii, x, and y positions of the
+	bubbles on the screen in comparison to the x position and length of the arrow most
+	recently shot.
+4. Bubble/Snowy collisions
+	- Because Snowy is essentially made up of three circles, a collision between a bubble
+	and Snowy can be detected using the distance formula. The program calculates the 
+	distance between Snowy's main body circle center (only the bottom circle, to keep the game from being impossible to finish), and each bubble center. If the distance is less
+	than the sum of Snowy's radius and the particular bubble's radius, a collision has
+	occurred.
+5. Making clouds
+	- Something seemed to be missing from the game -- an addition obstacle. So, I created
+	a function that creates clouds in random areas (but generally at the top of the 
+	screen). The clouds are meant to obstruct the view of the bubbles for brief moments.
+
+SINGLE/MULTIPLAYER ISSUES/RESOLUTIONS:
+1. Going up levels
+	- In order to detect when to set up the next level, there needed to be a toggle
+	for when the game is over. However, this was not enough; the gameover toggle could
+	be false but the level not be finished. So, the function determineLevel() not only
+	examines the status of the gameover toggle, but also makes sure that largeBubbleList,
+	mediumBubbleList, and smallBubbleList are all empty lists (to clarify, snowballs
+	are referred to as bubbles in the code).
+
+STAYING ALIVE MODE ISSUES/RESOLUTIONS:
+1. When to create more bubbles
+	- All bubbles are randomly generated. To make this mode increasingly difficult, however, bubbles are newly generated when the sum of medium bubbles and large bubbles 
+	on the screen is less than a particular number (rather than the sum of all bubbles).
+	Because small bubbles are not included in the count, the number of bubbles for the player to avoid will steadily increase.
+
+LEVEL EDITOR MODE ISSUES/RESOLUTIONS:
+1. Creating own level
+	- Bubbles can be created simply by pressing the bubble size you want to create, and 
+	then clicking anywhere on the game screen. When the player clicks on a valid game 
+	screen space, the coordinates and standard velocities of the bubble is added to the
+	respective bubble size's list. 
+2. Playing your own level
+	- A play button controlls the various toggles. Before the play button is pressed, only
+	the level editor toggle is true, stopping all movement. When the play button is pressed, the single player toggle becomes true instead, allowing regular gameplay.
+
+
+
+
+
+
+
+

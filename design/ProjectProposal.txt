@@ -1,0 +1,18 @@
+PROBLEM: To create an arcade-style game. The objective of each level in this game is to pop each bubble enough times that all bubbles disappear while not getting hit by any bubbles. Will feature single-player, multiplayer, create-your-own-level functions. May also include a "staying alive" game mode (if time allows). Movement of bubbles must be somewhat close to realistic and match the laws of physics.
+
+TOOLS: Tkinter, EventBasedAnimationClass, PIL (to convert images into Tkinter-compatible image objects)
+
+INCREMENTS: 
+0. Main Menu (Single Player, Multiplayer, Create Your Own Level, Staying Alive, Settings)
+1. Single Player:
+	- first create a basic first level (add more levels later)
+	- incorporate physics into bubble movements
+2. Multiplayer:
+	- same as single player, but with a second character that can be controlled by other keyboard buttons
+3. Create Your Own Level:
+	- can adjust height of ceiling, size/number of bubbles, add walls that open when bubbles in current section of room is finished
+	- if walls are present, user must number the order in which the sections of the room must be finished
+4. Staying Alive:
+	- computer constantly randomly generates different size bubbles until the user is hit by a bubble
+5. Settings:
+	- features toggle functions for various settings

@@ -1,0 +1,7 @@
+The pre-existing game most similar to my proposal is called "Bubble Trouble". The pre-existing version offers a multiplayer function, a controls editor function, as well as a high scores function. However, graphics are rather lacking, and the game can become monotonous with continuous play.
+
+The same company has recently come out with a second version of "Bubble Trouble." Its graphics are a little crisper and cleaner, and features more animations from the character during the game. It introduces a new game mode -- "Staying Alive" -- which is a very interesting idea that may be a good feature to incorporate into my own game. Again, this new version features single-player, multiplayer, setup functions, and high score functions. Still, it lacks a level editor, which may also be a fun addition to my version of the game.
+
+Both the first and second versions of this game, however, seem to have a somewhat tacky and rudimental interface. There is a contrast between high-quality artwork and slightly blurry, low-quality artwork that throws off the viewer.
+
+From these pre-existing games, I plan to use the multiplayer option and "Staying Alive" game mode. I also plan to stay away from the user interface that the pre-existing games offer and to attempt a somewhat more intuitive and sophisticated interface. In addition to these, I'd like to add a level editor function.
